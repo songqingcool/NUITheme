@@ -1,0 +1,23 @@
+//
+//  NUIThemePrefixHeader.pch
+//  NUITheme
+//
+//  Created by 宋庆功 on 2016/12/12.
+//  Copyright © 2016年 思源. All rights reserved.
+//
+
+#ifndef NUIThemePrefixHeader_pch
+#define NUIThemePrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 8.0 and later."
+#endif
+
+#import <UIKit/UIKit.h>
+
+#endif /* NUIThemePrefixHeader_pch */
