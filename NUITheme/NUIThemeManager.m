@@ -36,15 +36,14 @@
         [NUISettings setAutoUpdatePath:themeFilePath];
         [NUISettings initWithStylesheet:[[themeFilePath lastPathComponent] stringByDeletingPathExtension]];
     });
-    
 }
 
 - (void)changeThemeWithFilePath:(NSString *)filePath
 {
-    _currentThemePath = filePath;
-    
     BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
     NSAssert(!fileExist, @"主题文件不存在");
+    
+    _currentThemePath = filePath;
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [NUISettings setAutoUpdatePath:filePath];
