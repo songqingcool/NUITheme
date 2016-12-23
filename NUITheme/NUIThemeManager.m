@@ -21,7 +21,7 @@
     return instance;
 }
 
-- (void)startDefaultThemeService
+- (void)startDefaultTheme
 {
     // 初始化为默认主题
     NSString *bundlePath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Themes.bundle"];
