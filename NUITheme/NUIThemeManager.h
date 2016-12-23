@@ -11,17 +11,17 @@
 @interface NUIThemeManager : NSObject
 
 // 默认主题路径
-@property (nonatomic, copy, readonly) NSString *defaultThemePath;
+@property (nonatomic, copy, readonly) NSString *defaultPath;
 // 当前主题路径
-@property (nonatomic, copy, readonly) NSString *currentThemePath;
+@property (nonatomic, copy, readonly) NSString *currentPath;
 
 
 + (NUIThemeManager *)sharedInstance;
 
-// 初始化主题管理类并设置默认主题
-- (void)startDefaultThemeService;
+// 程序启动设置默认主题
+- (void)startDefaultTheme;
 
 // 切换主题  文件路径为绝对路径
-- (void)changeThemeWithFilePath:(NSString *)filePath;
+- (void)changeThemeWithPath:(NSString *)filePath;
 
 @end

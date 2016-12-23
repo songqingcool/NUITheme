@@ -122,4 +122,6 @@
 
 + (void)setRerenderOnOrientationChange:(BOOL)rerender;
 
++ (void)stylesheetFileChanged;
+
 @end

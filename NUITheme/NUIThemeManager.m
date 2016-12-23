@@ -25,29 +25,23 @@
 {
     // 初始化为默认主题
     NSString *bundlePath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Themes.bundle"];
-    NSArray *paths = [NSBundle pathsForResourcesOfType:@"nss" inDirectory:bundlePath];
-    NSString *themeFilePath = [paths firstObject];
-    NSAssert(themeFilePath == nil, @"主题文件不存在");
+    NSString *themeFilePath = [NSBundle pathForResource:@"NUIStyle" ofType:@"nss" inDirectory:bundlePath];
     
-    _currentThemePath = themeFilePath;
-    _defaultThemePath = themeFilePath;
+    _defaultPath = themeFilePath;
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [NUISettings setAutoUpdatePath:themeFilePath];
-        [NUISettings initWithStylesheet:[[themeFilePath lastPathComponent] stringByDeletingPathExtension]];
-    });
+    [self changeThemeWithPath:themeFilePath];
 }
 
-- (void)changeThemeWithFilePath:(NSString *)filePath
+- (void)changeThemeWithPath:(NSString *)filePath
 {
     BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
-    NSAssert(!fileExist, @"主题文件不存在");
+    NSAssert(fileExist, @"主题文件不存在");
     
-    _currentThemePath = filePath;
+    _currentPath = filePath;
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [NUISettings setAutoUpdatePath:filePath];
-//        [NUIRenderer stylesheetFileChanged];
+        [NUIRenderer stylesheetFileChanged];
     });
 }
 
