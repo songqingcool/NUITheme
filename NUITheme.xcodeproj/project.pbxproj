@@ -243,7 +243,6 @@
 		E9C2F6FD1DFEB07D00D7D95B /* NUIPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C2F6A71DFEB07C00D7D95B /* NUIPToken.m */; };
 		E9C2F6FE1DFEB07D00D7D95B /* NUIPWhiteSpaceToken.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C2F6A81DFEB07C00D7D95B /* NUIPWhiteSpaceToken.h */; };
 		E9C2F6FF1DFEB07D00D7D95B /* NUIPWhiteSpaceToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C2F6A91DFEB07C00D7D95B /* NUIPWhiteSpaceToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E9C2F7031DFEB08400D7D95B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9C2F7011DFEB08400D7D95B /* LICENSE.txt */; };
 		E9C2F70B1DFEB23000D7D95B /* NUIThemePrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = E9C2F70A1DFEB23000D7D95B /* NUIThemePrefixHeader.pch */; };
 /* End PBXBuildFile section */
 
@@ -401,7 +400,6 @@
 		E9C2F6471DFEADCC00D7D95B /* Themes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Themes.bundle; sourceTree = "<group>"; };
 		E9C2F64B1DFEB07C00D7D95B /* NUIPJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUIPJSONParser.h; sourceTree = "<group>"; };
 		E9C2F64C1DFEB07C00D7D95B /* NUIPJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUIPJSONParser.m; sourceTree = "<group>"; };
-		E9C2F64E1DFEB07C00D7D95B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E9C2F6501DFEB07C00D7D95B /* NUIPGrammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUIPGrammar.h; sourceTree = "<group>"; };
 		E9C2F6511DFEB07C00D7D95B /* NUIPGrammar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUIPGrammar.m; sourceTree = "<group>"; };
 		E9C2F6521DFEB07C00D7D95B /* NUIPGrammarInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUIPGrammarInternal.h; sourceTree = "<group>"; };
@@ -485,8 +483,6 @@
 		E9C2F6A71DFEB07C00D7D95B /* NUIPToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUIPToken.m; sourceTree = "<group>"; };
 		E9C2F6A81DFEB07C00D7D95B /* NUIPWhiteSpaceToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUIPWhiteSpaceToken.h; sourceTree = "<group>"; };
 		E9C2F6A91DFEB07C00D7D95B /* NUIPWhiteSpaceToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUIPWhiteSpaceToken.m; sourceTree = "<group>"; };
-		E9C2F7011DFEB08400D7D95B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		E9C2F7021DFEB08400D7D95B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E9C2F7061DFEB18300D7D95B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E9C2F70A1DFEB23000D7D95B /* NUIThemePrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUIThemePrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -556,7 +552,6 @@
 		E9C2F51B1DFEA96D00D7D95B /* NUI */ = {
 			isa = PBXGroup;
 			children = (
-				E9C2F7001DFEB08400D7D95B /* doc */,
 				E9C2F6471DFEADCC00D7D95B /* Themes.bundle */,
 				E9C2F51C1DFEA96D00D7D95B /* Core */,
 				E9C2F5811DFEA96E00D7D95B /* UI */,
@@ -729,7 +724,6 @@
 			isa = PBXGroup;
 			children = (
 				E9C2F64A1DFEB07C00D7D95B /* Built In Parsers */,
-				E9C2F64D1DFEB07C00D7D95B /* doc */,
 				E9C2F64F1DFEB07C00D7D95B /* Grammar */,
 				E9C2F6601DFEB07C00D7D95B /* NSArray+NUIFunctional.h */,
 				E9C2F6611DFEB07C00D7D95B /* NSArray+NUIFunctional.m */,
@@ -750,14 +744,6 @@
 				E9C2F64C1DFEB07C00D7D95B /* NUIPJSONParser.m */,
 			);
 			path = "Built In Parsers";
-			sourceTree = "<group>";
-		};
-		E9C2F64D1DFEB07C00D7D95B /* doc */ = {
-			isa = PBXGroup;
-			children = (
-				E9C2F64E1DFEB07C00D7D95B /* README.md */,
-			);
-			path = doc;
 			sourceTree = "<group>";
 		};
 		E9C2F64F1DFEB07C00D7D95B /* Grammar */ = {
@@ -896,15 +882,6 @@
 				E9C2F6A91DFEB07C00D7D95B /* NUIPWhiteSpaceToken.m */,
 			);
 			path = "Token Types";
-			sourceTree = "<group>";
-		};
-		E9C2F7001DFEB08400D7D95B /* doc */ = {
-			isa = PBXGroup;
-			children = (
-				E9C2F7011DFEB08400D7D95B /* LICENSE.txt */,
-				E9C2F7021DFEB08400D7D95B /* README.md */,
-			);
-			path = doc;
 			sourceTree = "<group>";
 		};
 		E9C2F7051DFEB18300D7D95B /* Frameworks */ = {
@@ -1089,7 +1066,7 @@
 				TargetAttributes = {
 					E9C2F4FD1DFEA90900D7D95B = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E9C2F5061DFEA90900D7D95B = {
 						CreatedOnToolsVersion = 8.1;
@@ -1125,7 +1102,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C2F7031DFEB08400D7D95B /* LICENSE.txt in Resources */,
 				E9C2F6481DFEADCC00D7D95B /* Themes.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1391,6 +1367,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1416,6 +1393,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
